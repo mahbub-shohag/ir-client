@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+/** Theme css **/
+.theme-color {
+	/* background-color: #d69a31 !important; */
+	background-color: #03a9f4 !important;
+    /*background-color: #c98715b3 !important;*/
+}
+.theme-btn {
+	background-color: #d69a31 !important;
+	color: #fff;
+	float: right;
+	/*background-color: #c98715b3 !important;*/
+}
+.theme-btn:hover {
+	background-color: #ff9800 !important;
+}
+/** End Theme css **/
+
+/** Logo **/
+.navbar-brand img {
+	height: 43px;
+}
+.navbar-brand h1 {
+    /*color: #14790d; */
+    color: #fff !important;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+    font-size: 28px;
+    display: inline-block;
+}
+.navbar-brand h1:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fe9797;
+}
+/** End Logo **/
+
+.page-header {
+    color: #c98715b3;
+    font-size: 22px; 
+    font-weight: bold
+}
+
+/** Login **/
+.card-login {
+	width: 360px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+    margin-top: 25%;
+    top: 76%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.form-login {
+	width: 280px;
+}
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+/** End Login **/
+
+/** Signup **/
+.card-signup {
+	background-color: #f1f1f1;
+	padding: 20px;
+	margin-top: 20px;
+}
+.btn-signup {
+	width: 80% !important;
+    margin-left: 18.5%;
+}
+/** End Signup **/
+
+/** Participants **/
+.btn-participants {
+	background: #ff5d00;
+	color: #fff;
+}
+.btn-participants:hover {
+	background: #cf2a0e;
+}
+/** End Participants**/
+
+/** Caller **/
+.allocated-tlpins button {
+	margin: 3px !important;
+    background: #03a9f4;
+    color: #fff;
+    border: 1px solid #2196f3;
+    width: 40px;
+}
+.unallocated-tlpins {
+	width: 50%;
+}
+.unallocated-tlpins button {
+	margin: 3px !important;
+    background: #c7c7c7;
+    color: #000;
+    border: 1px solid #ffc107;
+    width: 40px;
+}
+
+.table-chw th,td{
+    text-align: center;
+}
+.table-participant th,td{
+    text-align: center;
+}
+/** End Caller **/
+
+/** Footer **/ 
+footer {
+	padding-top: 2rem;
+}
+hr.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+footer .jivita-green {
+    color: green;
+}
+footer .jivita-red {
+	color: red;
+}
+
+.image-size{
+    width:400px;
+    height: 400px;
+}
+/** End Footer **/
