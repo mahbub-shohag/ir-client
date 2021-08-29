@@ -18,7 +18,7 @@ import Fgd from './components/fgd/Fgd.js';
 function App() {
   return (
     <>
-      <Router basename={'/rammps'}>
+      <Router basename={'/ir'}>
         
         <Navbar/>
 

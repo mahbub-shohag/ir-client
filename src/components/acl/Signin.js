@@ -54,7 +54,7 @@ import { useHistory } from "react-router-dom";
           .then(function (response) {
             sessionStorage.setItem("role",response.data.authorities[0]);
             sessionStorage.setItem("username",response.data.user_name);
-            window.location.href = "/rammps/";
+            window.location.href = "/ir/";
           })
           .catch(function (response) {
             //handle error

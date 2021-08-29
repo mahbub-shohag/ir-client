@@ -47,7 +47,7 @@ function Fgd() {
               })
                 .then(function (response) {  
                     setWomans(response.data);
-                    //setLoading(false);
+                    setLoading(false);
                 })
                 .catch(function (response) {
                 });             
@@ -55,7 +55,7 @@ function Fgd() {
         }, []);
 
         const handleSearch = (tlpin) =>{
-            //setLoading(true);
+            setLoading(true);
             var bodyFormData = new FormData();
             bodyFormData.append('tlpin', tlpin);
             axios({
@@ -66,16 +66,16 @@ function Fgd() {
               })
                 .then(function (response) {
                     setNumbers(response.data);
-                    //setLoading(false);
+                    setLoading(false);
                 })
                 .catch(function (response) {
                 });
     
         } 
 
-        // if(loading){
-        //     return (<Loader/>)        
-        // }
+        if(loading){
+            return (<Loader/>)        
+        }
 
     return (
         <div className="container-fluid">

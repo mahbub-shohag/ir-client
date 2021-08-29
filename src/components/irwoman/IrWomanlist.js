@@ -3,6 +3,7 @@ import axios from 'axios';
 import Select from "react-dropdown-select";
 import Loader from '../commonpages/Loader';
 import IRWomanListComponent from '../irwoman/IRWomanListComponent';
+import './IrWoman.css';
 function Chwlist() {
     const { REACT_APP_URL} = process.env;
     const [loading,setLoading] = useState(true);

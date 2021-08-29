@@ -10,12 +10,11 @@ import './Navbar.css'
 import { BrowserRouter as Router, Switch, Route,Link } from 'react-router-dom';
 function Navbar() {
     const username =sessionStorage.getItem("username");
-    //const role = sessionStorage.getItem("role");
-    const role = "ROLE_ADMIN";
-
+    const role = sessionStorage.getItem("role");
+    
     const signout = () =>{
         sessionStorage.clear();
-        window.location.href = "/rammps/";
+        window.location.href = "/ir/";
     }
     return (
             <nav className="navbar navbar-expand-lg bg-light navbar-light sticky-top theme-color">
@@ -32,9 +31,9 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul className="navbar-nav ml-auto">
                     
-                    {role == "ROLE_ADMIN" || role == "ROLE_FGD" ? (
+                    {role == "ROLE_ADMIN" || role == "ROLE_CALLER" ? (
                     <li className="nav-item">
-                        <Link className="nav-link" to="new-enrollment"><i className="fa fa-wpforms" aria-hidden="true"></i> New Enrolement</Link>
+                    <a target="_blank" className="nav-link" href="https://enketo.ona.io/x/THQ7auKh"><i className="fa fa-wpforms" aria-hidden="true"></i>New Enrolement</a>
                     </li>
                     ):(null)}
     

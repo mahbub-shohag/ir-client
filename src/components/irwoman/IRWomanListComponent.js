@@ -13,8 +13,6 @@ function IRWomanListComponent(props:any) {
                     <td>{participant.hhid}</td>
                     <td>{participant.NWWOMNAME}</td>
                     <td>{participant.NWHUSNAME}</td>
-                    <td>{participant.mwradob}</td>
-                    <td>{participant.lmp}</td>
                     <td>--</td>
                     <td>--</td>
                     <td>--</td>
@@ -36,8 +34,6 @@ function IRWomanListComponent(props:any) {
                 <th>HHID</th>
                 <th>Woman Name</th>
                 <th>Husband  Name</th>
-                <th>DOB</th>
-                <th>LMP</th>
                 <th>FGD Consent</th>
                 <th>FGD Consent Date</th>
                 <th>IDI Consent</th>
