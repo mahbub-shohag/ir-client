@@ -66,7 +66,7 @@ function Chwlist() {
                 headers: { "Content-Type": "application/json" },
               })
                 .then(function (response) {
-                    setNumbers(response.data);
+                    setWomans(response.data);
                     setLoading(false);
                 })
                 .catch(function (response) {

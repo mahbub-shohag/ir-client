@@ -1,6 +1,6 @@
 {
-  "name": "rammps-client",
-  "homepage": "http://103.219.160.154:8080/rammps",
+  "name": "ir-client",
+  "homepage": "http://103.219.160.154:8080/ir",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
