@@ -2,8 +2,8 @@ import React,{useEffect,useState} from 'react'
 import axios from 'axios';
 import Select from "react-dropdown-select";
 import Loader from '../commonpages/Loader';
-import FgdListComponent from '../fgd/FgdListComponent';
-function Fgd() {
+import IdiListComponent from '../idi/IdiListComponent';
+function Idi() {
     const { REACT_APP_URL} = process.env;
     const [loading,setLoading] = useState(true);
     const [selectedTlpin,setSelectedTlpin] = useState([]);
@@ -41,7 +41,7 @@ function Fgd() {
             bodyFormData.append("tlpin", "");
             axios({
                 method: "post",
-                url: REACT_APP_URL+`fgd/get-all-fgd`,
+                url: REACT_APP_URL+`idi/get-all-idi`,
                 data:bodyFormData,
                 headers: { "Content-Type": "application/json" },
               })
@@ -60,7 +60,7 @@ function Fgd() {
             bodyFormData.append('tlpin', tlpin);
             axios({
                 method: "post",
-                url: REACT_APP_URL+`fgd/get-all-fgd`,
+                url: REACT_APP_URL+`idi/get-all-idi`,
                 data:bodyFormData,
                 headers: { "Content-Type": "application/json" },
               })
@@ -81,7 +81,7 @@ function Fgd() {
         <div className="container-fluid">
             <div className="card">
                 <div className="card-header page-header">
-                FGD List <button onClick={handleRefresh} className="btn btn-primary btn-sm refresh-btn">Refresh  <i className="fa fa-refresh" aria-hidden="true"></i></button>
+                IDI List <button onClick={handleRefresh} className="btn btn-primary btn-sm refresh-btn">Refresh  <i className="fa fa-refresh" aria-hidden="true"></i></button>
                 <div className="tlpinSearch">
                 <Select
                     placeholder="Choose TLPIN"
@@ -95,10 +95,10 @@ function Fgd() {
                 </div>
                 </div>
                 <div className="card-body">
-                    <FgdListComponent womans={womans}/>
+                    <IdiListComponent womans={womans}/>
                 </div>
             </div>
             </div>
     )
 }
-export default Fgd;
+export default Idi;

@@ -13,7 +13,7 @@ function FgdListComponent(props:any) {
                     <td>{participant.hhid}</td>
                     <td>{participant.NWWOMNAME}</td>
                     <td>{participant.NWHUSNAME}</td>
-                    <td><a target="_blank" href={"https://enketo.ona.io/x/iZdT9MEI?d[UID]=" + participant.uid + "&d[MWNAME]=" + participant.NWWOMNAME+ "&d[HUSNAME]=" + participant.personName + "&d[Sector]="+participant.sectorid+"&d[HHID]="+participant.hhid+"&d[TLPIN]="+participant.tlpin+"&d[HUSNAME]="+participant.NWHUSNAME+"&d[Sector]="+participant.Sector+"&d[HHID]="+participant.HHID+"&d[TLPIN]="+participant.TLPIN}><button type="button" className="btn btn-participants btn-sm">FGD Consent <i className="fa fa-external-link" aria-hidden="true"></i></button></a></td>
+                    <td><a target="_blank" href={"https://enketo.ona.io/x/iZdT9MEI?d[UID]=" + participant.uid + "&d[MWNAME]=" + participant.NWWOMNAME+"&d[HUSNAME]="+participant.NWHUSNAME+ "&d[Sector]="+participant.sectorid+"&d[HHID]="+participant.hhid+"&d[TLPIN]="+participant.tlpin}><button type="button" className="btn btn-participants btn-sm">FGD Consent <i className="fa fa-external-link" aria-hidden="true"></i></button></a></td>
         </tr>)
         
     ))

@@ -39,9 +39,17 @@ function Navbar() {
     
 
                     {role == "ROLE_ADMIN" || role == "ROLE_FGD" ? (
+                    <>
                     <li className="nav-item">
                         <Link className="nav-link" to="fgd-list"><i className="fa fa-list-ol" aria-hidden="true"></i> FGD LIST</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="idi-list"><i className="fa fa-list-ol" aria-hidden="true"></i> IDI LIST</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="adherence-list"><i className="fa fa-list-ol" aria-hidden="true"></i> Adherence LIST</Link>
+                    </li>
+                    </>
                     ):(null)}
     
 

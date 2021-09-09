@@ -1,8 +1,6 @@
 import React from 'react'
-import Moment from 'react-moment';
-import moment from "moment";
 
-function IRWomanListComponent(props:any) {
+function AdherenceListComponent(props:any) {
     
     const {womans} = props;
     let numberrows = [];
@@ -15,12 +13,7 @@ function IRWomanListComponent(props:any) {
                     <td>{participant.hhid}</td>
                     <td>{participant.NWWOMNAME}</td>
                     <td>{participant.NWHUSNAME}</td>
-                    <td>{participant.fgdConsent}</td>
-                    <td>{(participant.fgdConsentDate === "" || participant.fgdConsentDate==null)?"--":moment(participant.fgdConsentDate).format("DD-MM-YYYY")}{" "}
-                    </td>
-                    <td>{participant.idiConsent}</td>
-                    <td>{(participant.idiConsentDate === "" || participant.idiConsentDate == null)?"--":moment(participant.idiConsentDate).format("DD-MM-YYYY")}{" "}</td>
-                    
+                    <td><a target="_blank" href={"https://enketo.ona.io/x/R2KU93rE?d[UID]=" + participant.uid + "&d[NWWOMNAME]=" + participant.NWWOMNAME+"&d[NWHUSNAME]="+participant.NWHUSNAME+ "&d[SECTORID]="+participant.sectorid+"&d[HHID]="+participant.hhid+"&d[TLPIN]="+participant.tlpin+"&d[MAUZ]="+participant.mauz+"&d[UNI]="+participant.uni}><button type="button" className="btn btn-participants btn-sm">Mobile Adherence<i className="fa fa-external-link" aria-hidden="true"></i></button></a></td>
         </tr>)
         
     ))
@@ -37,10 +30,7 @@ function IRWomanListComponent(props:any) {
                 <th>HHID</th>
                 <th>Woman Name</th>
                 <th>Husband  Name</th>
-                <th>FGD Consent</th>
-                <th>FGD Consent Date</th>
-                <th>IDI Consent</th>
-                <th>IDI Consent Date</th>
+                <th>Interview</th>
             </tr>
             </thead>
             <tbody>
@@ -50,4 +40,4 @@ function IRWomanListComponent(props:any) {
     </div>
   )
 }
-export default IRWomanListComponent;
+export default AdherenceListComponent;

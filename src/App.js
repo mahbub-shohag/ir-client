@@ -15,6 +15,8 @@ import AddPermission from './components/acl/AddPermission.js';
 import Signin from './components/acl/Signin.js';
 import Upload from './components/acl/Upload.js';
 import Fgd from './components/fgd/Fgd.js';
+import Idi from './components/idi/Idi.js';
+import Adherence from './components/adherence/Adherence.js';
 function App() {
   return (
     <>
@@ -27,6 +29,8 @@ function App() {
             <Route path="/" exact component={Home}/>
             <Route path="/irwoman-list" component={IRWomanlist}/>
             <Route path="/fgd-list" component={Fgd}/>
+            <Route path="/idi-list" component={Idi}/>
+            <Route path="/adherence-list" component={Adherence}/>
             <Route path="/new-enrollment" component={NewEntroll}/>
             <Route path="/user-list" component={Users}/>
             <Route path="/add-user" component={AddUser}/>
